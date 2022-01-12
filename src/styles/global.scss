@@ -13,6 +13,7 @@
   --color-gray-900: #E5E5E5;
   --color-gray-750: #C4C4C4;
   --color-gray-600: #949494;
+  --color-gray-450: #828282;
   --color-gray-400: #727272;
   --color-gray-150: #333333;
 
@@ -46,8 +47,7 @@
   font-family: var(--font-Lato);
   font-weight: 300;
   font-size: 1.8rem;
-  text-transform: uppercase;
-  color: rgba(229, 229, 229, 1);
+  
 
   display: flex;
   justify-content: center;
@@ -58,7 +58,8 @@
 /*  font == 16px */
 html{
 
-  font-size: 50%;
+  // font-size: 50%;
+  font-size: 62.5%;
 
 
   // @media (max-width:1080px){

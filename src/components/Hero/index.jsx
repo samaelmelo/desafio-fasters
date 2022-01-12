@@ -24,7 +24,13 @@ export function Hero() {
             compre hoje, <strong>pague em até 3x <br /> com 12% de desconto</strong> e tenha <br />  10 meses para confeccionar!
           </span>
 
-          <CommonButton/>
+          <CommonButton 
+            text='faça ja um orçamento'
+            textTransform='uppercase'
+            color='#E5E5E5'
+          />
+
+
         </div>
       </div>
       

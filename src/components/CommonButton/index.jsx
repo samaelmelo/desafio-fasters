@@ -1,9 +1,13 @@
 import "../../styles/global.scss"
 
-export function CommonButton(){
+export function CommonButton({text, textTransform, color}){
   return(
-    <a href="/" className="commonButton">
-        faça ja um orçamento
+    <a 
+      href="/" 
+      className="commonButton"
+      style={{textTransform: textTransform, color: color}} 
+      >
+        {text}
     </a>
   )
 }
