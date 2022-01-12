@@ -1,23 +1,27 @@
 .containerTestimonial{
     width: 100%;
-    height: 60vh;
     background: var(--color-blue-950);
     padding-left: 14.8rem;
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     
     .testimonialContent{
       background-image: url("../../assets/tailor.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      width: 90.5rem;
+      max-width: 1360px;
+
       height: 36rem;
       
       display: flex;
       justify-content: center;
       align-items: center;
 
+      position: relative;
 
       quotation{
         padding-top: 9rem;
@@ -31,6 +35,8 @@
           font: 300 2.4rem var(--font-Lato);
           color: var(--gray-450);
           margin-bottom: 4.7rem;
+          text-align: center;
+          line-height: 33,91px;
         }
 
         cite{
@@ -43,35 +49,96 @@
         };
       }
 
-    
+      >img{
+        position: relative;
+        z-index: 1;
+      }
+      
+      .containerImageTwo{
+       width: 31rem;
+       height: 100%;
+       
+       position: relative;
 
-    }
+       margin-left: -8rem;
 
-    .testimonialImageTwo{
-      width: 31.3rem;
-      height: 36rem;
+       z-index: 0;
 
-      position: relative;
-
-      &:after{
+       &:after{
+        content: '';
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 0;
-        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(2, 75, 104, 0.81);        
+       }
+    }
+    }
+
+    
+    
+}
+
+.sectionCards{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border:   1px solid red;
+
+}
+
+
+.containerCards{
+  max-width: 1360px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card{
+    width: 46rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    img{
+      width: 4rem;
+      height: 3rem;
+    }
+
+    strong{
+      font: 500 3rem var(--font-Cormorant);
+      text-transform: uppercase;
+
+      color: var(--color-blue-600);
+    }
+
+    span {
+      font-family: var(--font-Lato);
+      font-weight: 300;
+      font-size: 1.4rem;
+      color: var(--color-gray-400);
+    }
+
+    & + .card{
+      &::after{
         content: '';
-        width: 100%;
-        height: 100%;
-        background-color:  rgba(2, 75, 104, 0.81);
-      }
-
-
-      img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
+        width: 1px;
+        height: 5rem;
+        
+        position: absolute;
+        left: 0;
+        background: rgba(204, 204, 204, 1);
+        ;
       }
     }
-    
+  }
 }
