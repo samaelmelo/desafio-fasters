@@ -4,7 +4,7 @@ import "./styles.scss"
 
 export function Header() {
   return(
-    <header >
+    <header className='headerChangeBackground'>
       <div className='contentHeader'>
 
         <img src={ImageLogo} alt="" />

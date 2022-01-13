@@ -17,7 +17,9 @@ export function Bid() {
       <section className="containerBid">
         
         <div className="containerContentBid">
-          <h1 className="gold">Condição Imperdível</h1>
+          <h1 className="gold">
+            Condição Imperdível
+          </h1>
 
           <span 
             className="gold">
@@ -81,6 +83,31 @@ export function Bid() {
               textTransform='none'
             />
 
+        </div>
+
+        <div className='cardClothing'>
+            <h1>Alfaiataria</h1>
+            <span>totalmente  feito a mão  sob medida</span>
+
+            <ul>
+              <li>Fio Super 120 e 130</li>
+              <li>Lã fria Australiana</li>
+              <li>Botões Importados</li>
+              <li>Ternos e Calças</li>
+              <li>Paletós e Smokings</li>
+              <li>Sociais e Esportivos</li>
+            </ul>
+
+            <CommonButton 
+              text="Quero um orçamento"
+              color='#E5E5E5'
+              textTransform='none'
+            />
+
+        </div>
+
+        <div className='containerImageClothing'>
+            <img src={ImageClothingTwo} alt="Roupa de alfaiataria" />
         </div>
         
       </section>
