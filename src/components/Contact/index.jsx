@@ -5,6 +5,9 @@ import "./styles.scss"
 export function Contact (){
   return(
     <section className='containerContact'>
+
+      <div className="wrapperAll">
+
       <h2>Contato</h2>  
 
 
@@ -26,11 +29,20 @@ export function Contact (){
             
           </div>
 
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, facilis est! Nostrum doloremque quae animi pariatur modi eum, unde atque facere? Nam omnis quidem quos! Voluptate enim reiciendis blanditiis repudiandae!
+          
+
+          <div className="formContact">
+            <form action="">
+            <label htmlFor="name">Nome</label>
+            <input type="text" placeholder="Name" id='name'/>
+            <label htmlFor="Email">E-mail</label>
+            <input type="email" placeholder="email"/>
+            <label htmlFor="mensage"></label>
+            <textarea name="mensage" id="mensage" placeholder="mensagem"></textarea>
+            <button>Enviar Mensagem</button>
+          </form>
           </div>
-
-
+      </div>
       </div>
 
     </section>

@@ -8,13 +8,18 @@
   justify-content: center;
   align-content: center;
 
-  border: 1px solid red;
+  padding-top: 5rem;
 
   h2{
     text-align: center;
+    font: 300 3.8rem var(--font-Cormorant);
+    color: var(--color-blue-600);
   }
 
+
+  margin-bottom: 8.4rem;
 }
+
 
 .containerWrapperContact{
   width: 100%;
@@ -73,5 +78,84 @@
       border: 1px solid var(--color-blue-350);
     }
     
+  }
+
+  
+}
+
+
+.formContact{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form{
+    display: flex;
+    flex-direction: column;
+
+
+    label{
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    input{
+      width: 50rem;
+      height: 4.2rem;
+      border: 1px solid var(--color-blue-600);
+      outline: none;
+      padding-inline: 1rem;
+      font: 300 1.4rem var(--font-Lato);
+
+
+      &::placeholder{
+        text-transform: capitalize;
+      }
+    }
+    
+
+    input[type="email"]{
+      margin-bottom: 1.8rem;
+    }
+
+    textarea{
+      height: 7.7rem;
+      resize: none;
+      margin-bottom: 2.6rem;
+
+      border: 1px solid var(--color-blue-600);
+      outline: none;
+
+      padding: 1rem;
+
+      font: 300 1.4rem var(--font-Lato);
+
+      &::placeholder{
+        text-transform: capitalize;
+      }
+    }
+    button{
+      width: 50rem;
+      height: 5rem;
+      background-color: var(--color-blue-350);
+      color: var(--color-gray-900);
+
+
+      font: 300 1.8rem var(--font-Lato);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: none;
+
+      transition: filter .3s ;
+
+      &:hover{
+        filter: brightness(1.1);
+      }
+
+    }
   }
 }

@@ -1,6 +1,3 @@
-import IconQuality from '../../assets/quality.svg'
-import IconTrust from '../../assets/trust.svg'
-import IconExperience from '../../assets/experience.svg'
 
 import ImageClothing from '../../assets/clothing.svg'
 import {CommonButton} from "../CommonButton"

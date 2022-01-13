@@ -101,13 +101,13 @@
   width: 100%;
   
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 60rem);
   place-items: center;
   gap: 0;
   row-gap: 10rem;
 
-  padding-inline: 15rem;
-  justify-content: end;
+  // padding-inline: 15rem;
+  justify-content: center;
   align-content: center;
   align-items: center;
   transition: .3s ease ;
@@ -218,6 +218,13 @@
 
         font:400 italic 2.4rem var(--font-Cormorant) ;
 
+      }
+    }
+
+    a{
+      transition: .3s;
+      &:hover{
+        filter: brightness(.9);
       }
     }
   }

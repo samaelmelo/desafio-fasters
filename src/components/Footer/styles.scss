@@ -1,0 +1,34 @@
+.containerFooter{
+  width: 100%;
+  height: 18rem;
+
+  border-top: 1px solid #BE9667;
+
+  padding: 3rem 5rem 3.8rem 20rem
+}
+
+.wrapperFooter{
+  max-width: 1360px;
+  height: 100%;
+  margin: 0 auto;
+
+
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  p{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+  }
+
+  .containerIcon{
+    
+    padding: 1rem;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.404);
+  }
+
+}

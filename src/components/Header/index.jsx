@@ -1,10 +1,16 @@
 import  ImageLogo from "../../assets/logo.svg"
+import { header } from "../../services/script"
+
 
 import "./styles.scss"
 
 export function Header() {
+
+  
+
+
   return(
-    <header className='headerChangeBackground'>
+    <header id='header' className='headerChangeBackground'>
       <div className='contentHeader'>
 
         <img src={ImageLogo} alt="" />
@@ -22,3 +28,5 @@ export function Header() {
     </header>
   )
 }
+
+
