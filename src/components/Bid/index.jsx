@@ -12,52 +12,55 @@ export function Bid() {
   return (
     <>
       <section className="containerBid">
-        
-        <div className="containerContentBid">
-          <h1 className="gold">
-            Condição Imperdível
-          </h1>
+        <div className="wrapperBid">
+          <div className="containerContentBid">
+            <h1 className="gold">
+              Condição Imperdível
+            </h1>
 
-          <span 
-            className="gold">
-              Compre hoje e garanta:
-          </span>
-        
-          <ul>
-            <li>
-              <span>-</span>
-              12% de desconto e pagamento em até <strong>3x sem juros</strong> ;
-            </li>
-            <li>
-              <span>-</span>
-              Até <strong>10 meses</strong> para confeccionar sua roupa. Não se
-              preocupe se suas medidas aumentaram ou diminuíram, estará sempre
-              elegante;
-            </li>
-            <li>
-              <span>-</span>
-              Condição muito especial por <strong>tempo limitado</strong> ;
-            </li>
-            <li>
-              <span>-</span>
-              Poder presentear alguém com uma roupa de alta costura, exclusiva.
-            </li>
-          </ul>
+            <span 
+              className="gold">
+                Compre hoje e garanta:
+            </span>
+          
+            <ul>
+              <li>
+                <span>-</span>
+                12% de desconto e pagamento em até <strong>3x sem juros</strong> ;
+              </li>
+              <li>
+                <span>-</span>
+                Até <strong>10 meses</strong> para confeccionar sua roupa. Não se
+                preocupe se suas medidas aumentaram ou diminuíram, estará sempre
+                elegante;
+              </li>
+              <li>
+                <span>-</span>
+                Condição muito especial por <strong>tempo limitado</strong> ;
+              </li>
+              <li>
+                <span>-</span>
+                Poder presentear alguém com uma roupa de alta costura, exclusiva.
+              </li>
+            </ul>
 
-          <CommonButton 
-            text="Garanta essa condição especial! "
-            color='#E0E0E0'
-            textTransform='none'
-          />
+            <CommonButton 
+              text="Garanta essa condição especial! "
+              color='#E0E0E0'
+              textTransform='none'
+            />
 
-        </div>
+          </div>
 
-        <div className="containerImageBid">
-          <img src={ImageClothing} alt="Terno de Alfaiataria" />
+          <div className="containerImageBid">
+            <img src={ImageClothing} alt="Terno de Alfaiataria" />
+          </div>
+
         </div>
       </section>
 
       <section className='containerCardClothing'>
+        <div className="wrapperClothing">
         <div className='containerImageClothing'>
             <img src={ImageClothingOne} alt="Roupa de alfaiataria" />
         </div>
@@ -106,7 +109,7 @@ export function Bid() {
         <div className='containerImageClothing'>
             <img src={ImageClothingTwo} alt="Roupa de alfaiataria" />
         </div>
-        
+        </div>
       </section>
     
     </>

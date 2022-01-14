@@ -8,21 +8,23 @@ export function Carroussel() {
   
   return (
     <section className="containerCarousel">
+      <div className="wrapperCarousel">
+
         <h2>Depoimentos</h2>
 
       <Carousel fade className='containerWrapperCarousel' >
       {apiCarousel.map( item => (
-        <Carousel.Item className='carouselItem' >
+        <Carousel.Item className='carouselItem' key={item.name}>
           <img
             src={item.path}
             alt="First slide"
           />
           <Carousel.Caption className='contentCaption'>
-            <bloquote>
+            <blockquote>
               <cite> 
                   {item.text}
                </cite>
-            </bloquote>
+            </blockquote>
             <h3>{item.name}</h3>
             <p>{item.local}</p>
           </Carousel.Caption>
@@ -31,6 +33,7 @@ export function Carroussel() {
 
 ))}
       </Carousel>
+      </div>
         
     </section>
   )

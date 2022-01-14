@@ -7,39 +7,42 @@ import './styles.scss'
 export function About() {
   return (
     <section className="containerAbout">
-      <div className="containerImage">
-        <img src={ImgRenee} alt="" />
-      </div>
+      <div className="wrapperAbout">
+        <div className="containerImage">
+          <img src={ImgRenee} alt="" />
+        </div>
 
-      <div className="content">
-        <h1>Renee Trajar</h1>
-        <p>
-          Com mais de 35 anos de experiência em camisas, calças e ternos sob
-          medida, possuímos profissionais experientes e altamente qualificados.
-        </p>
-        <p>
-          Cada cliente tem seu molde exclusivamente desenvolvido para seu
-          biotipo através das medidas tiradas pelo próprio Sr. Renee, no
-          escritório ou residência do cliente.
-        </p>
-
-        <blockquote>
+        <div className="content">
+          <h1>Renee Trajar</h1>
           <p>
-            “Nosso objetivo é superar a expectativa do cliente
-            proporcionando-lhe satisfação ao usar nossos produtos, aliado a um
-            relacionamento franco e honesto, valorizando o ser humano.”
+            Com mais de 35 anos de experiência em camisas, calças e ternos sob
+            medida, possuímos profissionais experientes e altamente
+            qualificados.
+          </p>
+          <p>
+            Cada cliente tem seu molde exclusivamente desenvolvido para seu
+            biotipo através das medidas tiradas pelo próprio Sr. Renee, no
+            escritório ou residência do cliente.
           </p>
 
-          <cite>Renee Trajar</cite>
+          <blockquote>
+            <p>
+              “Nosso objetivo é superar a expectativa do cliente
+              proporcionando-lhe satisfação ao usar nossos produtos, aliado a um
+              relacionamento franco e honesto, valorizando o ser humano.”
+            </p>
 
-          <img src={ImgQuotation} alt="Double quotaion" />
-        </blockquote>
+            <cite>Renee Trajar</cite>
 
-        <CommonButton
-          text="Agende uma visita!"
-          textTransform="none"
-          color="rgba(229, 229, 229, 1)"
-        />
+            <img src={ImgQuotation} alt="Double quotaion" />
+          </blockquote>
+
+          <CommonButton
+            text="Agende uma visita!"
+            textTransform="none"
+            color="rgba(229, 229, 229, 1)"
+          />
+        </div>
       </div>
     </section>
   )

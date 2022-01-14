@@ -1,5 +1,4 @@
 import  ImageLogo from "../../assets/logo.svg"
-import { header } from "../../services/script"
 
 
 import "./styles.scss"

@@ -11,25 +11,31 @@ export function Testimonials() {
   return (
     <>
       <section className="containerTestimonial">
-        <div className="testimonialContent">
-          <quotation>
-            <p>
-              “Faço roupas com o Renee Trajar há mais de duas décadas, o serviço é
-              impecável em todos os detalhes, desde a costura ao caimento. O Renee
-              tem uma equipe de mestre!”
-            </p>
-            <cite>Nelson Garey</cite>
-            <span>Advogado | Nelson Garey Advogados Associados</span>
-          </quotation>
-          
-          <img src={ImagePersonOne} alt="" />
+        <div className="wrapperTestmonial">
+          <div className="testimonialContent">
+            <blockquote>
+              <p>
+                “Faço roupas com o Renee Trajar há mais de duas décadas, o
+                serviço é impecável em todos os detalhes, desde a costura ao
+                caimento. O Renee tem uma equipe de mestre!”
+              </p>
+              <cite>Nelson Garey</cite>
+              <span>Advogado | Nelson Garey Advogados Associados</span>
+            </blockquote>
 
-          <div className='containerImageTwo'>
-            <img src={ImagePersonTwo} alt="" />
+
+            <div className="containerImageTwo">
+              <div className='containerImg'>
+                <img src={ImagePersonOne} alt="Nelson Garey" />
+              </div>
+              <div className='containerImg'>
+                  <img src={ImagePersonTwo} alt="Nelson Garey" />
+              </div>
+            </div>
           </div>
-          
         </div>
       </section>
+
       <section className='sectionCards'>
         <div className="containerCards">
         

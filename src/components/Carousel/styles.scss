@@ -9,6 +9,17 @@
   justify-content: center;
   align-items: center;
 
+  .wrapperCarousel{
+    max-width: 1360px;
+    margin: 0 auto;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  }
+
   h2{
     position: relative;
     z-index: 1000;
@@ -75,7 +86,7 @@
 
   }
 
-  bloquote{
+  blockquote{
     cite{
       margin-top: -5rem;
       font: 300 italic 2.6rem var(--font-Cormorant);
